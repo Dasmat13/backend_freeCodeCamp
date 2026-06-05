@@ -1,19 +1,27 @@
-// npm - global command, comes with code 
-// npm --version
-// local dependency - use it only in the particular projects
-// npm i <packageName>
+const {readFile} = require('fs');
+const { result } = require('lodash');
 
-// global dependency - use it in any project
-// npm install -g <packageName>
-// sudo npm install -g <packageName> (mac)
+const getText = (path) => {
+    return new Promise ( (resolve,reject)=>{
+        readFile(path,'utf8',(err,data)=>{
+    if(err){
+        reject(err)
+    }
+    else{
+        resolve(data);
+    }
+})
+    })
+}
 
-// package.json - manifest file (stores important info about project/package)
-//manual approch (create package.json in the root , create properties etc)
-// npm init (step by step, press enter to skip)
-// npm init -y (everything default)
+// getText('./content/first.txt')
+// .then((result) => console.log(result))
+// .catch((err) => console.log(err))
 
-const _ = require('lodash');
+const start = async() => {
+    const first = await getText('./content/first.txt')
+    console.log(first);
+    
+}
 
-const items = [1,[2,[3,[4,[5]]]]]
-const newItems = _.flatMapDeep(items)
-console.log(newItems);
+start()
