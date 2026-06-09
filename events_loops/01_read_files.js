@@ -12,7 +12,7 @@ readFile('../content/first.txt', 'utf8', (err, result) => {
     // callback fires when done: 'err' = error (or null), 'result' = file content
 
     if (err) {
-        console.log(er);    // BUG: 'er' is not defined — should be 'err' (with double 'r')
+        console.log(err);    // BUG: 'er' is not defined — should be 'err' (with double 'r')
                              // This will throw: ReferenceError: er is not defined
                              // FIX: Change 'er' → 'err'
         return;              // exits the callback early so nothing below runs

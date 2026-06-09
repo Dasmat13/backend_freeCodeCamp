@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
     }
 
     // ─── ROUTE: About Page (BUG HERE) ────────────────────────────────────
-    if (req.url === './about') {
+    if (req.url === '/about') {
         // BUG: the URL should be '/about' (with a leading slash), NOT './about'
         // Browsers always send URLs starting with '/' (e.g. /about, /contact)
         // './about' is a relative file path — it will NEVER match a browser request

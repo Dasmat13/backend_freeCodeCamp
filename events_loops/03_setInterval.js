@@ -4,7 +4,7 @@ setInterval(() => {          // setInterval schedules a callback to run REPEATED
                              // setInterval keeps the Node.js process alive and running indefinitely
                              // To stop it: use clearInterval(id) where id = the return value of setInterval
 
-console.log('i will run frist');  // NOTE: 'frist' is a typo — should be 'first'
+console.log('i will run first');  // NOTE: 'frist' is a typo — should be 'first'
                                     // This runs IMMEDIATELY — synchronous code always runs before async timers
                                     // Even though setInterval is written first, this line runs first!
                                     // Expected output:

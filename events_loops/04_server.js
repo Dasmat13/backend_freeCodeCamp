@@ -18,6 +18,6 @@ const server = http.createServer((req, res) => {
 server.listen(5000, () => {
     // .listen() starts the server — tells it to accept connections on port 5000
     // The callback runs ONCE when the server is fully ready to accept requests
-    console.log('server listing on port : 5000....');  // NOTE: typo — 'listing' should be 'listening'
+    console.log('server listening on port : 5000....');  // NOTE: typo — 'listing' should be 'listening'
                                                          // Prints once at startup, then the server waits
 })
