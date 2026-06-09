@@ -1,6 +1,6 @@
 # 📗 Node.js Backend — freeCodeCamp
 
-A structured, hands-on Node.js learning repository — from globals and modules to async patterns and HTTP servers.  
+A structured, hands-on Node.js learning repository — from globals and modules to async patterns, HTTP servers, EventEmitters, and Streams.  
 Each file builds on the previous one, covering core backend concepts with runnable code examples and inline notes.
 
 ---
@@ -23,9 +23,14 @@ backend_freeCodeCamp/
 ├── 12_diff_btw_sync_and_async → Sync vs Async comparison
 ├── 13_http_modules.js         → Creating an HTTP server
 ├── 14_npm_basic.js            → NPM basics & package management
+├── 15_event_emitter.js        → EventEmitter — custom events with .on() and .emit()
+├── 16_request_event.js        → HTTP server using explicit EventEmitter API
+├── 17_creating_bigFiles.js    → Generates a 10,000-line big.txt for stream demo
+├── 18_http_stream.js          → Streams — createReadStream, chunks, Buffer
 ├── app.js                     → Promise-based async file reader
 ├── async_patterns/            → Blocking server, async/await patterns
 ├── events_loops/              → Event loop: setTimeout, setInterval, servers
+├── notes/                     → 📚 Study notes, bug tracker, interview Q&A
 └── content/                   → Text files used for fs module exercises
 ```
 
@@ -50,6 +55,10 @@ backend_freeCodeCamp/
 | `12_diff_btw_sync_and_async` | Side-by-side comparison of sync vs async execution order |
 | `13_http_modules.js` | `http.createServer()` — routing requests, sending responses |
 | `14_npm_basic.js` | `npm` commands, local vs global dependencies, `package.json` |
+| `15_event_emitter.js` | `EventEmitter` — `.on()`, `.emit()`, multiple listeners, Observer pattern |
+| `16_request_event.js` | HTTP server built with explicit `server.on('request', ...)` event style |
+| `17_creating_bigFiles.js` | Generates a 10,000-line file using `writeFileSync` in a loop |
+| `18_http_stream.js` | `createReadStream` — reading large files in chunks, `'data'` & `'error'` events |
 | `app.js` | Custom `getText()` utility using Promises + `async/await` |
 
 ### 📁 `async_patterns/` — Async Patterns in Depth
