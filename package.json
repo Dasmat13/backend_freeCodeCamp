@@ -1,1 +1,22 @@
-{}
+{
+  "name": "backend_freecodecamp",
+  "version": "1.0.0",
+  "description": "A structured, hands-on Node.js learning repository — from globals and modules to async patterns and HTTP servers.   Each file builds on the previous one, covering core backend concepts with runnable code examples and inline notes.",
+  "main": "01_intro.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dasmat13/backend_freeCodeCamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Dasmat13/backend_freeCodeCamp/issues"
+  },
+  "homepage": "https://github.com/Dasmat13/backend_freeCodeCamp#readme"
+}
